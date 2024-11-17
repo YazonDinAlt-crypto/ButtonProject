@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Все наоборот"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:hint="Введите текст"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:background="@android:color/white"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Преобразовать"
+        android:textSize="16sp"
+        android:background="@color/bright_yellow"
+        android:textColor="@android:color/primary_text_light"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Результат текста"
+        android:importantForAccessibility="yes"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/charCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество символов: 0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
